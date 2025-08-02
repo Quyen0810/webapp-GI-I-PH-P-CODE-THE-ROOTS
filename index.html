@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Địa Đạo Phú Thọ Hòa - Di Tích Lịch Sử Chiến Tranh</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Code-the-Roots/61578848735415/"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@thnht3694?_t=ZS-8yWAFlXpuaO&_r=1"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Nhập từ khóa tìm kiếm..." class="search-input">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="contact-info">
+          <span class="hotline">Hotline: <strong>0235.3731.309</strong></span>
+          <button class="auth-btn" style="background: none; border: none; color: #d4a574; font-weight: 500; cursor: pointer; padding: 5px 10px; border-radius: 5px; transition: all 0.3s ease;">
+            <i class="fas fa-sign-in-alt"></i> Đăng nhập
+          </button>
+          <div class="google-translate-container">
+            <div id="google_translate_element"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <div class="nav-left">
+          <a href="index.html" class="nav-item active" data-nav="home"><i class="fas fa-home"></i></a>
+          <a href="gioithieu.html" class="nav-item" data-nav="introduction">
+            <ion-icon name="book-outline"></ion-icon> 
+            <span>GIỚI THIỆU</span>
+          </a>
+          <a href="dichvu.html" class="nav-item" data-nav="services">
+            <span>DỊCH VỤ</span>
+          </a>
+          <a href="spdulich.html" class="nav-item" data-nav="products">
+            <span>SẢN PHẨM DU LỊCH</span>
+          </a>
+        </div>
+
+        <div class="logo">
+          <a href="index.html">
+            <img src="image/logo.png"
+              alt="Địa Đạo Phú Thọ Hòa Logo" class="logo-img">
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <a href="bt&ph.html" class="nav-item" data-nav="preservation">
+            <span>BẢO TỒN & PHÁT HUY</span>
+          </a>
+          <a href="tt&sk.html" class="nav-item" data-nav="news">
+            <span>TIN TỨC & SỰ KIỆN</span>
+          </a>
+          <a href="thuvien.html" class="nav-item" data-nav="library">
+            <span>THƯ VIỆN</span>
+          </a>
+          <a href="lienhe.html" class="nav-item" data-nav="contact">
+            <span>LIÊN HỆ</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background">
+      <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=1080&fit=crop&crop=center"
+        alt="Mỹ Sơn Aerial View" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="heritage-badge">
+        <div class="badge-icon">
+          <i class="fas fa-landmark"></i>
+        </div>
+        <div class="badge-text">
+          <h3>Di Tích Chiến Tranh</h3>
+          <p>Vietnamese war</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Navigation -->
+    <div class="side-nav">
+      <div class="side-nav-item">
+        <span class="nav-label">TRANG CHỦ</span>
+        <div class="nav-dot active"></div>
+      </div>
+      <div class="side-nav-item">
+        <div class="nav-dot"></div>
+      </div>
+      <div class="side-nav-item">
+        <div class="nav-dot"></div>
+      </div>
+      <div class="side-nav-item">
+        <div class="nav-dot"></div>
+      </div>
+      <div class="side-nav-item">
+        <div class="nav-dot"></div>
+      </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+      <button class="float-btn view-360" title="Xem 360°">
+        <span class="btn-text">360°</span>
+      </button>
+      <button class="float-btn view-vr" title="Thực tế ảo">
+        <span class="btn-text">VR360°</span>
+      </button>
+      <button class="float-btn phone" title="Gọi điện">
+        <i class="fas fa-phone"></i>
+      </button>
+      <button class="float-btn zalo" title="Zalo">
+        <span class="btn-text">Zalo</span>
+      </button>
+
+      <input type="checkbox" id="click">
+      <label for="click">
+        <i class="fab fa-facebook-messenger"></i>
+        <i class="fas fa-times"></i>
+      </label>
+      <div class="wrapper">
+        <div class="head-text">
+          Hãy trò chuyện? - Trực tuyến
+        </div>
+        <div class="chat-box">
+          <div class="desc-text">
+            Vui lòng điền thông tin bên dưới để bắt đầu trò chuyện với nhân viên hỗ trợ.
+          </div>
+          <form action="#">
+            <div class="field">
+              <input type="text" placeholder="Tên của bạn" required>
+            </div>
+            <div class="field">
+              <input type="email" placeholder="Địa chỉ email" required>
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" placeholder="Giải thích yêu cầu của bạn..." required></textarea>
+            </div>
+            <div class="field">
+              <button type="submit">Bắt đầu trò chuyện</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Sections -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Khám Phá Địa Đạo Phú Hòa Thọ</h2>
+        <p>Địa đạo Phú Thọ Hòa là một công trình quân sự dưới lòng đất đặt tại phường Phú Thọ Hòa cách trung tâm Thành phố Hồ Chí Minh chưa đầy 10km về hướng Tây. Hệ thống được chi bộ xã Phú Thọ Hòa và Chi đội 12 xây dựng để phục vụ hai cuộc chiến tranh lớn nhất Việt Nam vào thế kỷ 20. Tuy ra đời trong bối cảnh bị bao vây bởi đồn bốt của đối thủ nhưng khu căn cứ vẫn hoạt động hiệu quả xuyên suốt hai thập kỷ tranh đấu chống thực dân Pháp và Mỹ của quân dân giải phóng vùng Sài Gòn – Gia Định – Chợ Lớn. Đây chính là địa đạo xuất hiện đầu tiên trên toàn khu vực Nam Bộ, trước cả địa đạo giữ kỷ lục dài nhất Việt Nam.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summaries Section -->
+  <section class="summaries-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Khám Phá Thêm</h2>
+        <p>Khám phá các khía cạnh khác nhau của di tích lịch sử địa đạo Phú Thọ Hòa</p>
+      </div>
+
+      <div class="summaries-grid">
+        <!-- Giới Thiệu Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="summary-content">
+            <h3>Giới Thiệu</h3>
+            <p>Khám phá lịch sử hình thành, cấu trúc độc đáo và giá trị di tích của địa đạo Phú Thọ Hòa - di tích lịch sử cấp Quốc gia đầu tiên tại Sài Gòn.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-history"></i> Lịch sử hình thành</span>
+              <span><i class="fas fa-route"></i> Cấu trúc độc đáo</span>
+              <span><i class="fas fa-landmark"></i> Di tích lịch sử</span>
+            </div>
+            <a href="gioithieu.html" class="see-more-btn">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- Dịch Vụ Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-concierge-bell"></i>
+          </div>
+          <div class="summary-content">
+            <h3>Dịch Vụ</h3>
+            <p>Trải nghiệm các dịch vụ hướng dẫn chuyên nghiệp, tour du lịch đặc biệt và quà lưu niệm độc đáo mang đậm dấu ấn lịch sử.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-user-tie"></i> Hướng dẫn viên</span>
+              <span><i class="fas fa-gift"></i> Quà lưu niệm</span>
+              <span><i class="fas fa-users"></i> Tour nhóm</span>
+            </div>
+            <a href="dichvu.html" class="see-more-btn">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- Sản Phẩm Du Lịch Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-suitcase"></i>
+          </div>
+          <div class="summary-content">
+            <h3>Sản Phẩm Du Lịch</h3>
+            <p>Khám phá các gói tour du lịch đặc biệt từ cơ bản đến VIP, cùng những sản phẩm lưu niệm độc đáo.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-route"></i> Tour cơ bản</span>
+              <span><i class="fas fa-star"></i> Tour VIP</span>
+              <span><i class="fas fa-shopping-bag"></i> Quà lưu niệm</span>
+            </div>
+            <a href="spdulich.html" class="see-more-btn">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- Bảo Tồn & Phát Huy Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="summary-content">
+            <h3>Bảo Tồn & Phát Huy</h3>
+            <p>Tìm hiểu về các thách thức bảo tồn, lịch sử trùng tu và các dự án phát huy giá trị di tích lịch sử.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-tools"></i> Trùng tu</span>
+              <span><i class="fas fa-calendar-alt"></i> Lịch sử bảo tồn</span>
+              <span><i class="fas fa-chart-line"></i> Phát triển</span>
+            </div>
+            <a href="bt&ph.html" class="see-more-btn">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- Tin Tức & Sự Kiện Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="summary-content">
+            <h3>Tin Tức & Sự Kiện</h3>
+            <p>Cập nhật những tin tức mới nhất về hoạt động bảo tồn và các sự kiện đặc biệt tại di tích.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-newspaper"></i> Tin tức mới</span>
+              <span><i class="fas fa-calendar"></i> Sự kiện</span>
+              <span><i class="fas fa-bell"></i> Thông báo</span>
+            </div>
+            <a href="tt&sk.html" class="see-more-btn">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- Thư Viện Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-archive"></i>
+          </div>
+          <div class="summary-content">
+            <h3>Thư Viện</h3>
+            <p>Khám phá bộ sưu tập tài liệu lịch sử, thư viện ảnh và video quý giá về địa đạo qua các thời kỳ.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-file-pdf"></i> Tài liệu</span>
+              <span><i class="fas fa-images"></i> Thư viện ảnh</span>
+              <span><i class="fas fa-video"></i> Video</span>
+            </div>
+            <a href="thuvien.html" class="see-more-btn">Xem thêm</a>
+          </div>
+        </div>
+
+        <!-- 360° Virtual Tour Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-vr-cardboard"></i>
+          </div>
+          <div class="summary-content">
+            <h3>360° Virtual Tour</h3>
+            <p>Trải nghiệm tham quan ảo 360 độ với 5 điểm khám phá chính: Cổng chính, Địa đạo 1, Bảo tàng, Khu ngoài trời và Lối vào.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-home"></i> Cổng chính</span>
+              <span><i class="fas fa-route"></i> Địa đạo</span>
+              <span><i class="fas fa-landmark"></i> Bảo tàng</span>
+            </div>
+            <a href="map.html" class="see-more-btn">Khám phá 360°</a>
+          </div>
+        </div>
+
+        <!-- Liên Hệ Summary -->
+        <div class="summary-card">
+          <div class="summary-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="summary-content">
+            <h3>Liên Hệ</h3>
+            <p>Liên hệ với chúng tôi để được tư vấn, đặt tour hoặc tìm hiểu thêm thông tin về di tích lịch sử.</p>
+            <div class="summary-features">
+              <span><i class="fas fa-phone"></i> Hotline</span>
+              <span><i class="fas fa-map-marker-alt"></i> Bản đồ</span>
+              <span><i class="fas fa-envelope"></i> Email</span>
+            </div>
+            <a href="lienhe.html" class="see-more-btn">Liên hệ ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Liên Hệ</h4>
+          <p><i class="fas fa-phone"></i> Hotline: 0235.3731.309</p>
+          <p><i class="fas fa-envelope"></i> info@mysonheritage.vn</p>
+          <p><i class="fas fa-map-marker-alt"></i> Duy Phú, Duy Xuyên, Quảng Nam</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Giờ Mở Cửa</h4>
+          <p>Thứ 2 - Chủ Nhật: 6:30 - 17:30</p>
+          <p>Nghỉ các ngày lễ lớn</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Theo Dõi</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Mỹ Sơn Heritage Site. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="js/popup.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!-- Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {pageLanguage: 'vi'},
+        'google_translate_element'
+      );
+    } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

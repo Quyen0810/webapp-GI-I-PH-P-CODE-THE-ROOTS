@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Địa Đạo Phú Thọ Hòa - 360° Virtual Tour</title>
+        
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Pannellum CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+    <!-- Panorama Section -->
+    <section id="panorama-view" class="panorama-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Virtual Tour 360°</h2>
+                <p>Khám phá từng góc của Địa Đạo Phú Thọ Hòa với trải nghiệm 360 độ chân thực</p>
+            </div>
+            
+            <div class="panorama-container">
+                <div id="panorama"></div>
+                
+                <div class="panorama-controls">
+                    <div class="control-group">
+                        <button class="control-btn" data-panorama="image/4.jpg">
+                            <i class="fas fa-home"></i>
+                            <span>Cổng Chính</span>
+                        </button>
+                        <button class="control-btn" data-panorama="image/1.jpg">
+                            <i class="fas fa-route"></i>
+                            <span>Địa Đạo </span>
+                        </button>
+                        <button class="control-btn" data-panorama="image/2.jpg">
+                            <i class="fas fa-landmark"></i>
+                            <span>Bảo Tàng</span>
+                        </button>
+                        <button class="control-btn" data-panorama="image/3.jpg">
+                            <i class="fas fa-tree"></i>
+                            <span>Khu Ngoài Trời</span>
+                        </button>
+                        <button class="control-btn" data-panorama="image/5.jpg">
+                            <i class="fas fa-door-open"></i>
+                            <span>Lối Vào</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pannellum JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <script>
+        // Fallback if CDN fails
+        if (typeof pannellum === 'undefined') {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/pannellum@2.5.6/build/pannellum.js';
+            document.head.appendChild(script);
+        }
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/map.js"></script>
+</body>
+</html>
